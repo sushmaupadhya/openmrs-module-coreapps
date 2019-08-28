@@ -2,10 +2,10 @@
   {
     "id": "coreapps.latestObsForConceptList",
     "instanceOf": "coreapps.template.dashboardWidget",
-    "description": "coreapps.latestObsForConceptList.app.description",
+    "description": "coreapps.patientinfo.app.description",
     "order": 10,
     "config": {
-      "widget": "latestobsforconceptlist",
+      "widget": "patientinfo",
       "icon": "icon-user-md",
       "label": "PATIENT INFO",
       "maxAge": "1m",
@@ -13,7 +13,7 @@
       },
     "extensions": [
       {
-        "id": "${project.parent.groupId}.${project.parent.artifactId}.mostRecentVitals.clinicianDashboardFirstColumn",
+        "id": "${project.parent.groupId}.${project.parent.artifactId}.demographics.clinicianDashboardFirstColumn",
         "appId": "coreapps.latestObsForConceptList",
         "extensionPointId": "patientDashboard.firstColumnFragments",
         "extensionParams": {
